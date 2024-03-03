@@ -2,6 +2,8 @@
 #ifndef NLEQ_H
 #define NLEQ_H
 
+#include <vector>
+
 using method_t = double( double(*)(double), double, double, double, size_t& );
 
 double Bisection( double (*f)(double), double left, double right, double eps, size_t &iter );
